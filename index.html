@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mean Girls Quote Generator</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <form action="">
+    <fieldset class="questions q-One">
+      <p>How many times have you seen Mean Girls?</p>
+      <input type="radio" name="qOne" id="qOneA" value="qOneA" data-point="1">
+      <label for="qOneA">a. I don't even know what Mean Girls is</label>
+      <input type="radio" name="qOne" id="qOneB" value="qOneB" data-point="2">
+      <label for="qOneB">b. I've seen it a couple of times</label>
+      <input type="radio" name="qOne" id="qOneC" value="qOneC" data-point="3">
+      <label for="qOneC">c. I've basically watched it every day since it came out on dvd</label>
+    </fieldset>
+    
+    <fieldset class="questions q-Two">
+      <p>How often do you speak Mean Girls?</p>
+      <input type="radio" name="qTwo" id="qTwoA" value="qTwoA" data-point="3">
+      <label for="qTwoA">a. My mind is only made of mean girls quotes</label>
+      <input type="radio" name="qTwo" id="qTwoB" value="qTwoB" data-point="2">
+      <label for="qTwoB"> b. Only when the comedic timing is juuuust right</label>
+      <input type="radio" name="qTwo" id="qTwoC" value="qTwoC" data-point="1">
+      <label for="qTwoC">c. I may have quoted it once in my life, no one got it</label>
+    </fieldset>
+    
+    <fieldset class="questions q-Three">
+      <p>Who is your Mean Girls spirit animal?</p>
+      <input type="radio" name="qThree" id="qThreeA" value="qThreeA" data-point="1">
+      <label for="qThreeA">a. Cady Heron</label>
+      <input type="radio" name="qThree" id="qThreeB" value="qThreeB" data-point="3">
+      <label for="qThreeB"> b. Regina George</label>
+      <input type="radio" name="qThree" id="qThreeC" value="qThreeC" data-point="2">
+      <label for="qThreeC">c. Damian Leigh</label>
+    </fieldset>
+    
+    <fieldset class="questions q-Four">
+      <p>What was your favourite subject in high school?</p>
+      <input type="radio" name="qFour" id="qFourA" value="qFourA" data-point="2">
+      <label for="qFourA">a. Gym</label>
+      <input type="radio" name="qFour" id="qFourB" value="qFourB" data-point="3">
+      <label for="qFourB"> b. Math</label>
+      <input type="radio" name="qFour" id="qFourC" value="qFourC" data-point="1">
+      <label for="qFourC">c. English</label>
+    </fieldset>
+    
+    <fieldset class="questions qFive">
+      <p>Most importantly, how often do you wear pink?</p>
+      <input type="radio" name="qFive" id="qFiveA" value="qFiveA" data-point="3">
+      <label for="qFiveA">a. Every on Wednesdays, duh!</label>
+      <input type="radio" name="qFive" id="qFiveB" value="qFiveB" data-point="2">
+      <label for="qFiveB"> b. Pink is my favourite color, I wear it as often as I can!</label>
+      <input type="radio" name="qFive" id="qFiveC" value="qFiveC" data-point="1">
+      <label for="qFiveC">c. My color pallete consists of black and grays</label>
+    </fieldset>
+    <div class="submit-container">
+      <input type="submit" value="Give me a quote!">
+    </div>
+    <div class="clearForm">
+      <input type="button" class="clear" value="Clear Form">
+    </div>
+  </form>
+  
+  <section class="yourQuote">
+  </section>
+  <section class="yourImage">
+  </section>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
