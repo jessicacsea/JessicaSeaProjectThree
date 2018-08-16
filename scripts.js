@@ -90,6 +90,7 @@ $(function(){
         result = quotes.quoteB;
           console.log(result);
         } else {
+          (userChoiceTotal >= 15);
           result = quotes.quoteC;
           console.log(result);
         }
@@ -103,11 +104,13 @@ $(function(){
       $('.yourImage').html(image);
   }); /* END of form submit! */
 
-  // const image = $('<img>').attr('src', item.url);
+  $('.clearForm').on('click', function(){
+    $('input[type=radio]:checked').elemchecked;
+  });
 }); /*End of document ready*/
 
 // ADD button that clear the form
-// add images (see if we're able to add gifs) that come with each of the quotes
+
 
 
 
