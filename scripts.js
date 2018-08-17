@@ -79,14 +79,15 @@ $(function(){
     console.log(userQOneChoice, userQTwoChoice, userQThreeChoice, userQFourChoice, userQFiveChoice);
     
     let userChoiceTotal = userQOneChoice + userQTwoChoice + userQThreeChoice + userQFourChoice + userQFiveChoice;
-  
+    
     console.log(userChoiceTotal);
-
+  // if($(userChoiceTotal >= 5)) {
+      
     let result;
-      if(userChoiceTotal <= 5) {
+      if(userChoiceTotal <= 7) {
         result = quotes.quoteA;
         console.log(result);
-      } else if (userChoiceTotal >=6 && userChoiceTotal <=10) {
+      } else if (userChoiceTotal >=8 && userChoiceTotal <=12) {
         result = quotes.quoteB;
           console.log(result);
         } else {
@@ -102,15 +103,21 @@ $(function(){
       $('.yourQuote').html(`<h2 class="quoteAnswer">${randomQuote.saying}</h2>`);
       const image = $('<img>').attr('src', randomQuote.imgUrl);
       $('.yourImage').html(image);
+        // everything's fine...
+    
+    // } else {
+    //   alert('Have you answered all the questions?');
+    //   return false;
+    // }
+
   }); /* END of form submit! */
 
-  $('.clearForm').on('click', function(){
-    $('input[type=radio]:checked').elemchecked;
+  $('.clearButton').on('click', function(){
+    console.log("I AM FIRING")
+    $('input[type=radio]').prop('checked', false);
+    $('.yourQuote').empty();
+    $('.yourImage').empty();
   });
 }); /*End of document ready*/
 
-// ADD button that clear the form
-
-
-
-
+//make it so that you cann't submit the quiz without chosing one from each question
