@@ -81,7 +81,6 @@ $(function(){
     let userChoiceTotal = userQOneChoice + userQTwoChoice + userQThreeChoice + userQFourChoice + userQFiveChoice;
     
     console.log(userChoiceTotal);
-  // if($(userChoiceTotal >= 5)) {
       
     let result;
       if(userChoiceTotal <= 7) {
@@ -103,12 +102,6 @@ $(function(){
       $('.yourQuote').html(`<h2 class="quoteAnswer">${randomQuote.saying}</h2>`);
       const image = $('<img>').attr('src', randomQuote.imgUrl);
       $('.yourImage').html(image);
-        // everything's fine...
-    
-    // } else {
-    //   alert('Have you answered all the questions?');
-    //   return false;
-    // }
 
   }); /* END of form submit! */
 
@@ -119,5 +112,3 @@ $(function(){
     $('.yourImage').empty();
   });
 }); /*End of document ready*/
-
-//make it so that you cann't submit the quiz without chosing one from each question
