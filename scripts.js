@@ -37,7 +37,7 @@ const questions = [
 const scores = {
   low: [ 
     quote1 = {
-      saying: `OMG You need to watch Mean Girls again!`,
+      saying: `You need to watch Mean Girls again!`,
       imgUrl: 'assets/youcant.gif'
     },
     quote2 = {
@@ -70,7 +70,6 @@ const scores = {
 $(function(){
   $('form').on('submit', function(event) {
     event.preventDefault();
-    
 
     const userQOneChoice = $('input[name=qOne]:checked').data('point');
     
@@ -111,13 +110,14 @@ $(function(){
 
       console.log(randomResults.saying, randomResults.imgUrl);
 
-      $('.yourQuote').html(`<h2 class="quoteAnswer">${randomResults.saying}</h2>`);
+      $('.yourQuote').html(`<h3 class="quoteAnswer">${randomResults.saying}</h3>`);
       const image = $('<img>').attr('src', randomResults.imgUrl);
       $('.yourImage').html(image);
 
+
       let answerOne;
         if(userQOneChoice === 1) {
-          $('.answerOneResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked.gif">`);
+          $('.answerOneResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
           $('.answerOneResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b1.gif">`);
         };
@@ -131,7 +131,7 @@ $(function(){
 
       let answerThree;
         if(userQThreeChoice === 1) {
-          $('.answerThreeResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked.gif">`);
+          $('.answerThreeResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
           $('.answerThreeResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/c1.gif">`);
         };
@@ -145,7 +145,7 @@ $(function(){
 
       let answerFive;
         if (userQFiveChoice === 1) {
-          $('.answerFiveResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked.gif">`);
+          $('.answerFiveResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
           $('.answerFiveResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/mall.gif">`);
         }; 
@@ -159,7 +159,7 @@ $(function(){
 
       let answerSeven;
         if (userQSevenChoice === 1) {
-          $('.answerSevenResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked.gif">`);
+          $('.answerSevenResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
           $('.answerSevenResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/seth.gif">`);
         };
@@ -171,12 +171,7 @@ $(function(){
             $('.answerEightResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/eight.gif">`);
           };
 
-    $('input[type=submit').click(function () {
-      $('html, body').animate({
-        scrollBottom: $('.yourQuote').offset().top
-      }, 1000);
-    });
-
+    
   }); /* END of form submit! */
 
   $('.clearButton').on('click', function(){
