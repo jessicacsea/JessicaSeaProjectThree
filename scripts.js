@@ -70,6 +70,7 @@ const scores = {
 $(function(){
   $('form').on('submit', function(event) {
     event.preventDefault();
+    
 
     const userQOneChoice = $('input[name=qOne]:checked').data('point');
     
@@ -169,6 +170,13 @@ $(function(){
           } else {
             $('.answerEightResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/eight.gif">`);
           };
+
+    $('input[type=submit').click(function () {
+      $('html, body').animate({
+        scrollBottom: $('.yourQuote').offset().top
+      }, 1000);
+    });
+
   }); /* END of form submit! */
 
   $('.clearButton').on('click', function(){

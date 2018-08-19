@@ -1,22 +1,81 @@
 form {
-  border: white 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .questions {
-  border: green 2px solid;
   padding: 50px;
-  margin: 100px;
-  width: calc(50% - 200px);
+  margin: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
 }
 
 p {
   font-size: 2rem;
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 label {
   font-size: 1.5rem;
+  text-align: center;
+  height: 250px;
+  width: 200px;
+  padding-top: 40%;
+  color: white;
+}
+
+label:hover {
+  background-color: white;
+  color: hotpink;
+  border-radius: 10px;
 }
 
 input[type=submit], input[type=button] {
-  padding: 20px;
-  font-size: 1rem;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: palevioletred;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+  border: white 1px solid;
+  display: inline;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  background-color: white;
+  color: palevioletred;
+  border: 1px solid palevioletred;
+}
+
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+
+.quiz-selection {
+  border: white 1px solid;
+  border-radius: 10px;
+  height: 250px;
+  width:200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:checked + label {
+  background-color: white;
+  border-radius: 10px;
+  color: hotpink;
+}
+
+#final-answer {
+  scroll-behavior: smooth;
 }
