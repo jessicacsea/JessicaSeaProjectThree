@@ -12,60 +12,126 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<h1>Mean Girls Quote Generator</h1>
+<h1>How Well Do You Know Mean Girls?</h1>
 <h2>
   
 </h2>
   <form action="">
     <fieldset class="questions q-One">
-      <p>How many times have you seen Mean Girls?</p>
+      <p>Who receives the four Candy-Grams during Christmas?</p>
       <input type="radio" name="qOne" id="qOneA" value="qOneA" data-point="1">
-      <label for="qOneA">a. I don't even know what Mean Girls is</label>
-      <input type="radio" name="qOne" id="qOneB" value="qOneB" data-point="2">
-      <label for="qOneB">b. I've seen it a couple of times</label>
-      <input type="radio" name="qOne" id="qOneC" value="qOneC" data-point="3" required>
-      <label for="qOneC">c. I've basically watched it every day since it came out on dvd</label>
+      <label for="qOneA">a. Aaron Samuels</label>
+      <input type="radio" name="qOne" id="qOneB" value="qOneB" data-point="1">
+      <label for="qOneB">b. Gretchen Wieners</label>
+      <input type="radio" name="qOne" id="qOneC" value="qOneC" data-point="5" required>
+      <label for="qOneC">c. Glen Coco</label>
+      <input type="radio" name="qOne" id="qOneD" value="qOneD" data-point="1" required>
+      <label for="qOneD">d. Regina George</label>
+
+      <div class="answerOneResult">
+
+      </div>
     </fieldset>
     
     <fieldset class="questions q-Two">
-      <p>How often do you speak Mean Girls?</p>
-      <input type="radio" name="qTwo" id="qTwoA" value="qTwoA" data-point="3">
-      <label for="qTwoA">a. My mind is only made of mean girls quotes</label>
-      <input type="radio" name="qTwo" id="qTwoB" value="qTwoB" data-point="2">
-      <label for="qTwoB"> b. Only when the comedic timing is juuuust right</label>
+      <p>What class does Cady skip on her second day?</p>
+      <input type="radio" name="qTwo" id="qTwoA" value="qTwoA" data-point="1">
+      <label for="qTwoA">a. Math</label>
+      <input type="radio" name="qTwo" id="qTwoB" value="qTwoB" data-point="5">
+      <label for="qTwoB"> b. Health</label>
       <input type="radio" name="qTwo" id="qTwoC" value="qTwoC" data-point="1" required>
-      <label for="qTwoC">c. I may have quoted it once in my life, no one got it</label>
+      <label for="qTwoC">c. English</label>
+      <input type="radio" name="qTwo" id="qTwoD" value="qTwoD" data-point="1" required>
+      <label for="qTwoD">Science</label>
+
+      <div class="answerTwoResult"></div>
     </fieldset>
     
     <fieldset class="questions q-Three">
-      <p>Who is your Mean Girls spirit animal?</p>
+      <p>Fill in the blank:</p>
+      <p>"Grethen, I'm sorry I laughed at you that time you got _________ at _________. And I'm sorry for telling everyone about it. And I'm sorry for repeating it now."</p>
       <input type="radio" name="qThree" id="qThreeA" value="qThreeA" data-point="1" required>
-      <label for="qThreeA">a. Cady Heron</label>
-      <input type="radio" name="qThree" id="qThreeB" value="qThreeB" data-point="3">
-      <label for="qThreeB"> b. Regina George</label>
-      <input type="radio" name="qThree" id="qThreeC" value="qThreeC" data-point="2">
-      <label for="qThreeC">c. Damian Leigh</label>
+      <label for="qThreeA">a. caught stealing/ Saks</label>
+      <input type="radio" name="qThree" id="qThreeB" value="qThreeB" data-point="1">
+      <label for="qThreeB"> b. a pimple/ prom</label>
+      <input type="radio" name="qThree" id="qThreeC" value="qThreeC" data-point="1">
+      <label for="qThreeC">c. head lice/ Saks</label>
+      <input type="radio" name="qThree" id="qThreeD" value="qThreeD" data-point="5">
+      <label for="qThreeD">d. diarrhea/ Barnes & Noble </label>
+    
+      <div class="answerThreeResult"></div>
     </fieldset>
     
     <fieldset class="questions q-Four">
-      <p>What was your favourite subject in high school?</p>
-      <input type="radio" name="qFour" id="qFourA" value="qFourA" data-point="2">
-      <label for="qFourA">a. Gym</label>
-      <input type="radio" name="qFour" id="qFourB" value="qFourB" data-point="3">
-      <label for="qFourB"> b. Math</label>
+      <p>What song is Regina's sister dancing to when Cady first meets her?</p>
+      <input type="radio" name="qFour" id="qFourA" value="qFourA" data-point="1">
+      <label for="qFourA">a. Work It by Missy Elliot</label>
+      <input type="radio" name="qFour" id="qFourB" value="qFourB" data-point="5">
+      <label for="qFourB"> b. Milkshake by Kelis</label>
       <input type="radio" name="qFour" id="qFourC" value="qFourC" data-point="1" required>
-      <label for="qFourC">c. English</label>
+      <label for="qFourC">c. Move Ya Body by Nina Sky</label>
+      <input type="radio" name="qFour" id="qFourD" value="qFourD" data-point="1" required>
+      <label for="qFourD">d. Get Ur Freak On by Missy Elliot</label>
+
+      <div class="answerFourResult"></div>
     </fieldset>
     
     <fieldset class="questions qFive">
-      <p>Most importantly, how often do you wear pink?</p>
-      <input type="radio" name="qFive" id="qFiveA" value="qFiveA" data-point="3">
-      <label for="qFiveA">a. Every on Wednesdays, duh!</label>
-      <input type="radio" name="qFive" id="qFiveB" value="qFiveB" data-point="2">
-      <label for="qFiveB"> b. Pink is my favourite color, I wear it as often as I can!</label>
-      <input type="radio" name="qFive" id="qFiveC" value="qFiveC" data-point="1" required>
-      <label for="qFiveC">c. My color pallete consists of black and grays</label>
+      <p>When Cady goes shopping with the Plastics for the first time, what does Regina's shirt say?</p>
+      <input type="radio" name="qFive" id="qFiveA" value="qFiveA" data-point="1">
+      <label for="qFiveA">a. On Wednesdays, we wear pink!</label>
+      <input type="radio" name="qFive" id="qFiveB" value="qFiveB" data-point="1">
+      <label for="qFiveB"> b. Drama Queen</label>
+      <input type="radio" name="qFive" id="qFiveC" value="qFiveC" data-point="5" required>
+      <label for="qFiveC">c. A little bit Dramatic</label>
+      <input type="radio" name="qFive" id="qFiveD" value="qFiveD" data-point="1" required>
+      <label for="qFiveD">d. Juicy Couture Queen</label>
+
+      <div class="answerFiveResult"></div>
     </fieldset>
+
+    <fieldset class="questions qSix">
+      <p>Which of the following is <span class="bold">NOT</span> a clique on Janis' cafeteria map?</p>
+      <input type="radio" name="qSix" id="qSixA" value="qSixA" data-point="1">
+      <label for="qSixA">a. JV Jocks</label>
+      <input type="radio" name="qSix" id="qSixB" value="qSixB" data-point="1">
+      <label for="qSixB"> b. Cool Asians</label>
+      <input type="radio" name="qSix" id="qSixC" value="qSixC" data-point="1" required>
+      <label for="qSixC">c. Band Geeks</label>
+      <input type="radio" name="qSix" id="qSixD" value="qSixD" data-point="5" required>
+      <label for="qSixD">d. Friendly Black Hotties</label>
+
+      <div class="answerSixResult"></div>
+    </fieldset>
+
+    <fieldset class="questions qSeven">
+      <p>Who does Karen think is "looking fine tonight" at the Halloween party?</p>
+      <input type="radio" name="qSeven" id="qSevenA" value="qSevenA" data-point="5">
+      <label for="qSevenA">a. Seth Mosakowski</label>
+      <input type="radio" name="qSeven" id="qSevenB" value="qSevenB" data-point="1">
+      <label for="qSevenB"> b. Shane Omen</label>
+      <input type="radio" name="qSeven" id="qSevenC" value="qSevenC" data-point="1" required>
+      <label for="qSevenC">c. Shane Mosakowski</label>
+      <input type="radio" name="qSeven" id="qSevenD" value="qSevenD" data-point="1" required>
+      <label for="qSevenD">d. Kevin Omen</label>
+
+      <div class="answerSevenResult"></div>
+    </fieldset>
+
+    <fieldset class="questions qEight">
+      <p>What day of the week does Regina cheat on Aaron?</p>
+      <input type="radio" name="qEight" id="qEightA" value="qEightA" data-point="1">
+      <label for="qEightA">a. Wednesday</label>
+      <input type="radio" name="qEight" id="qEightB" value="qEightB" data-point="1">
+      <label for="qEightB"> b. Monday</label>
+      <input type="radio" name="qEight" id="qEightC" value="qEightC" data-point="5" required>
+      <label for="qEightC">c. Thursday</label>
+      <input type="radio" name="qEight" id="qEightD" value="qEightD" data-point="1" required>
+      <label for="qEightD">d. Friday</label>
+      
+      <div class="answerEightResult"></div>
+    </fieldset>
+
     <div class="submit-container">
       <input type="submit" value="Give me a quote!">
     </div>

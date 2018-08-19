@@ -132,10 +132,33 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
+body {
   font-size: 62.5%;
-  background-color: hotpink; }
+  background-color: hotpink;
+  font-family: 'Montserrat', sans-serif; }
+
+img {
+  max-width: 100%; }
 
 h1 {
   font-family: 'Karla', sans-serif;
   font-size: 5rem; }
+
+form {
+  border: white 2px solid; }
+
+.questions {
+  border: green 2px solid;
+  padding: 50px;
+  margin: 100px;
+  width: calc(50% - 200px); }
+
+p {
+  font-size: 2rem; }
+
+label {
+  font-size: 1.5rem; }
+
+input[type=submit], input[type=button] {
+  padding: 20px;
+  font-size: 1rem; }

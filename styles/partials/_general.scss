@@ -1,8 +1,13 @@
 // font-family: 'Karla', sans-serif;
 // font-family: 'Montserrat', sans-serif;
-html {
+body {
   font-size: 62.5%;
   background-color: hotpink;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {

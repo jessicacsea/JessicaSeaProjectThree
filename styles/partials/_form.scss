@@ -1,0 +1,22 @@
+form {
+  border: white 2px solid;
+}
+.questions {
+  border: green 2px solid;
+  padding: 50px;
+  margin: 100px;
+  width: calc(50% - 200px);
+}
+
+p {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type=submit], input[type=button] {
+  padding: 20px;
+  font-size: 1rem;
+}
