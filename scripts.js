@@ -68,9 +68,6 @@ const scores = {
 }
 
 $(function(){
-  ScrollReveal({ reset: true });
-  sr.reveal('.field-questions');
-  });
   $('form').on('submit', function(event) {
     event.preventDefault();
 
