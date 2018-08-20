@@ -68,7 +68,9 @@ const scores = {
 }
 
 $(function(){
-  $('.q-One')
+  ScrollReveal({ reset: true });
+  sr.reveal('.field-questions');
+  });
   $('form').on('submit', function(event) {
     event.preventDefault();
 
@@ -119,6 +121,7 @@ $(function(){
       let answerOne;
         if(userQOneChoice === 1) {
           $('.answer-One-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('label[for=qOneC]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-One-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b1.gif">`);
         };
@@ -126,6 +129,7 @@ $(function(){
       let answerTwo;
         if(userQTwoChoice === 1) {
           $('.answer-Two-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('label[for=qTwoB]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Two-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b2.gif">`);
         };
@@ -133,6 +137,7 @@ $(function(){
       let answerThree;
         if(userQThreeChoice === 1) {
           $('.answer-Three-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('label[for=qThreeD]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Three-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/c1.gif">`);
         };
@@ -140,6 +145,7 @@ $(function(){
       let answerFour;
         if(userQFourChoice === 1) {
           $('.answer-Four-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('label[for=qFourB]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Four-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/milkshake.gif">`);
         };
@@ -147,6 +153,7 @@ $(function(){
       let answerFive;
         if (userQFiveChoice === 1) {
           $('.answer-Five-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('label[for=qFiveC]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Five-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/mall.gif">`);
         }; 
@@ -154,6 +161,7 @@ $(function(){
       let answerSix;
         if (userQSixChoice === 1) {
           $('.answer-Six-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('label[for=qSixD]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Six-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/map.jpg">`);
         };
@@ -161,6 +169,7 @@ $(function(){
       let answerSeven;
         if (userQSevenChoice === 1) {
           $('.answer-Seven-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('label[for=qSevenA]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
         } else {
           $('.answer-Seven-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/seth.gif">`);
         };
@@ -168,6 +177,7 @@ $(function(){
       let answerEight;
           if(userQEightChoice === 1) {
             $('.answer-Eight-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+            $('label[for=qEightC]').css('background-color', 'mediumspringgreen').css('border-radius', '10px').css('border', 'mediumspringgreen 3px solid');
           } else {
             $('.answer-Eight-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/eight.gif">`);
           };
@@ -188,6 +198,14 @@ $(function(){
     $('.answer-Six-Result').empty();
     $('.answer-Seven-Result').empty();
     $('.answer-Eight-Result').empty();
+    $('label[for=qEightC]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qSevenA]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qSixD]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qFiveC]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qOneC]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qTwoB]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qThreeD]').css('background-color', '').css('border-radius', '').css('border', '');
+    $('label[for=qFourB]').css('background-color', '').css('border-radius', '').css('border', '');
   });
 
 

@@ -350,3 +350,25 @@ input:checked + label {
     font-size: 1.5rem; } }
 
 /* END OF MAX WIDTH 550PX */
+@media (max-width: 750px) {
+  h2 {
+    font-size: 1.8rem; }
+  .answer-choices {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%; }
+  .quiz-selection {
+    -ms-flex-preferred-size: calc(50% - 5%);
+    flex-basis: calc(50% - 5%);
+    height: 100%; }
+  h3 {
+    font-size: 1.7rem; }
+  p {
+    font-size: 1.6rem; }
+  label {
+    padding: 15% 5%;
+    font-size: 1.2rem; }
+  input[type=submit], input[type=button] {
+    font-size: 1.7rem; } }
+
+/* END OF MAX WIDTH 750PX */
