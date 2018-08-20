@@ -5,8 +5,8 @@ form {
   flex-direction: column;
 }
 .questions {
-  padding: 50px 50px 0 50px;
-  margin: 20px;
+  padding: 0 3%;
+  margin: 2%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -94,3 +94,89 @@ input:checked + label {
   flex-wrap: nowrap;
   width: 100%;
 }
+
+.answer-One-Result, .answer-Two-Result, .answer-Three-Result, .answer-Four-Result, .answer-Five-Result, .answer-Six-Result, .answer-Seven-Result, .answer-Eight-Result {
+  border-bottom: white 2px solid;
+}
+
+
+// ===MEDIA QUERIES===
+
+@media (max-width: 425px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  p{
+    font-size: 1rem;
+    margin-left: 5%;
+  }
+ 
+  label {
+    font-size: 1rem;
+    padding: 10%;
+  }
+
+  input[type=submit], input[type=button] {
+  font-size: 1.1rem;
+  margin: 1%;
+  }
+
+  .answer-choices {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .submit-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quiz-selection{
+    flex-basis: calc(50% - 5%);
+    margin: 2%;
+    height: 100%;
+  }
+
+  .your-Quote h3 {
+    font-size: 1.5rem;
+  }
+
+} /*END OF MAX WIDTH 425px*/
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+    padding: 10% 5%;
+  }
+
+  .answer-choices {
+    flex-wrap: wrap;
+    height:100%;
+  }
+
+  .quiz-selection {
+    flex-basis: calc(50% - 5%);
+    height: 100%;
+  }
+
+
+  input[type=submit], input[type=button] {
+  font-size: 1.5rem;
+  }
+} /* END OF MAX WIDTH 550PX */

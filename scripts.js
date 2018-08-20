@@ -41,7 +41,7 @@ const scores = {
       imgUrl: 'assets/youcant.gif'
     },
     quote2 = {
-      saying: `You are not a fan..`,
+      saying: `You are not a fan are you..`,
       imgUrl: 'assets/doesnt.gif'
     },
   ],
@@ -68,6 +68,7 @@ const scores = {
 }
 
 $(function(){
+  $('.q-One')
   $('form').on('submit', function(event) {
     event.preventDefault();
 
@@ -110,65 +111,65 @@ $(function(){
 
       console.log(randomResults.saying, randomResults.imgUrl);
 
-      $('.yourQuote').html(`<h3 class="quoteAnswer">${randomResults.saying}</h3>`);
+      $('.your-Quote').html(`<h3 class="quoteAnswer">${randomResults.saying}</h3>`);
       const image = $('<img>').attr('src', randomResults.imgUrl);
-      $('.yourImage').html(image);
+      $('.your-Image').html(image);
 
 
       let answerOne;
         if(userQOneChoice === 1) {
-          $('.answerOneResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('.answer-One-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
-          $('.answerOneResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b1.gif">`);
+          $('.answer-One-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b1.gif">`);
         };
       
       let answerTwo;
         if(userQTwoChoice === 1) {
-          $('.answerTwoResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('.answer-Two-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
         } else {
-          $('.answerTwoResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b2.gif">`);
+          $('.answer-Two-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/b2.gif">`);
         };
 
       let answerThree;
         if(userQThreeChoice === 1) {
-          $('.answerThreeResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('.answer-Three-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
-          $('.answerThreeResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/c1.gif">`);
+          $('.answer-Three-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/c1.gif">`);
         };
 
       let answerFour;
         if(userQFourChoice === 1) {
-          $('.answerFourResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('.answer-Four-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
         } else {
-          $('.answerFourResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/milkshake.gif">`);
+          $('.answer-Four-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/milkshake.gif">`);
         };
 
       let answerFive;
         if (userQFiveChoice === 1) {
-          $('.answerFiveResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('.answer-Five-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
-          $('.answerFiveResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/mall.gif">`);
+          $('.answer-Five-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/mall.gif">`);
         }; 
 
       let answerSix;
         if (userQSixChoice === 1) {
-          $('.answerSixResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+          $('.answer-Six-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
         } else {
-          $('.answerSixResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/map.jpg">`);
+          $('.answer-Six-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/map.jpg">`);
         };
 
       let answerSeven;
         if (userQSevenChoice === 1) {
-          $('.answerSevenResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
+          $('.answer-Seven-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/wrong.gif">`);
         } else {
-          $('.answerSevenResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/seth.gif">`);
+          $('.answer-Seven-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/seth.gif">`);
         };
 
       let answerEight;
           if(userQEightChoice === 1) {
-            $('.answerEightResult').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
+            $('.answer-Eight-Result').html(`<h2>Omg Wrong!!</h2> <img src="assets/shocked2.gif">`);
           } else {
-            $('.answerEightResult').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/eight.gif">`);
+            $('.answer-Eight-Result').html(`<h2>YOU'RE CORRECT!</h2> <img src="assets/eight.gif">`);
           };
 
     
@@ -177,16 +178,16 @@ $(function(){
   $('.clearButton').on('click', function(){
     console.log("I AM FIRING")
     $('input[type=radio]').prop('checked', false);
-    $('.yourQuote').empty();
-    $('.yourImage').empty();
-    $('.answerOneResult').empty();
-    $('.answerTwoResult').empty();
-    $('.answerThreeResult').empty();
-    $('.answerFourResult').empty();
-    $('.answerFiveResult').empty();
-    $('.answerSixResult').empty();
-    $('.answerSevenResult').empty();
-    $('.answerEightResult').empty();
+    $('.your-Quote').empty();
+    $('.your-Image').empty();
+    $('.answer-One-Result').empty();
+    $('.answer-Two-Result').empty();
+    $('.answer-Three-Result').empty();
+    $('.answer-Four-Result').empty();
+    $('.answer-Five-Result').empty();
+    $('.answer-Six-Result').empty();
+    $('.answer-Seven-Result').empty();
+    $('.answer-Eight-Result').empty();
   });
 
 
